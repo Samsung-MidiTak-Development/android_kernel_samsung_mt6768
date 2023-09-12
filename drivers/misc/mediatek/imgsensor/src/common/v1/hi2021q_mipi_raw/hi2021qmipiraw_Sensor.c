@@ -2740,7 +2740,7 @@ int hi2021q_otp_init(void)
 	return 0;
 }
 
-void hi2021q_otp_off_setting()
+void hi2021q_otp_off_setting(void)
 {
 	write_cmos_sensor_8(0x0B00, 0x00);
 	usleep_range(10000, 10100);
